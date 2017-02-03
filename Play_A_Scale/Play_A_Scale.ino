@@ -1,8 +1,9 @@
 /*
-Adafruit Arduino - Lesson 10. Simple Sounds
+Author: David Tassara
+Board: Playground
 */
 
-int speakerPin = 12;
+int speakerPin = 5;
 
 int numTones = 10;
 int tones[] = {261, 277, 294, 311, 330, 349, 370, 392, 415, 440};
