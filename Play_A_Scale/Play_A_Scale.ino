@@ -1,9 +1,10 @@
-/*
+ /*
 Author: David Tassara
-Board: Playground
+Board: Circuit Playground
 */
+#include <Adafruit_CircuitPlayground.h>
 
-int speakerPin = 5;
+int duration = 500; //how long should each note play
 
 int numTones = 10;
 int tones[] = {261, 277, 294, 311, 330, 349, 370, 392, 415, 440};
@@ -13,10 +14,9 @@ void setup()
 {
   for (int i = 0; i < numTones; i++)
   {
-    tone(speakerPin, tones[i]);
-    delay(500);
+    CircuitPlayground.playTone(tones[i], duration);
+    delay(100);
   }
-  noTone(speakerPin);
 }
 
 void loop()

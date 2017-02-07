@@ -27,7 +27,7 @@ void loop()
   
 //Step 3: Uncomment the code below and run. What happens?  
   if (lightValue > 100) {
-    CircuitPlayground.playTone(lightValue, 100, false);
+    CircuitPlayground.playTone(lightValue, 50, false);
   }
   else {
     //CircuitPlayground.playTone(lightValue, 100);
