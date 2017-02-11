@@ -2,6 +2,7 @@
  *  Purpose:  Demonstrate the raw values from the circuit playground accelerometer.
  *  Date:     10 Feb 2017
  *  Version:  1.0
+ *  TODO set maxV as float, move setup to loop
  */
 
 #include <Adafruit_CircuitPlayground.h>
@@ -38,10 +39,10 @@ void loop() {
 
 
   if (X > maxV | X < -maxV | Y > maxV | Y < -maxV | Z > maxV | Z < -maxV) {
-    CircuitPlayground.playTone(440, 1000);
+    wakeCP();
   }
-
   delay(100);
+  
 }
 
 void chooseSkillLevel() {
@@ -54,23 +55,41 @@ void chooseSkillLevel() {
       for (int p=0; p<skillLevel; p++) {
         CircuitPlayground.setPixelColor(p, 0xFFFFFF);
       }
-      
       delay(250); 
     }
   }
 }
 
 void setSkillLevel() {
-  // Set game difficulty  based on skill level
+  // Set game difficulty based on skill level
   switch (skillLevel) {
     case 1:
       maxV = 3;
+      CircuitPlayground.setPixelColor(0, 0x98FF48);
+      CircuitPlayground.setPixelColor(1, 0x98FF48);
+      CircuitPlayground.setPixelColor(2, 0x98FF48);
       break;
     case 2:
       maxV = 2;
+      CircuitPlayground.setPixelColor(0, 0x98FF48);
+      CircuitPlayground.setPixelColor(1, 0x98FF48);
       break;
     case 3:
       maxV = 1;
+      CircuitPlayground.setPixelColor(0, 0x98FF48);
       break;
   }
 }
+
+void wakeCP() {
+  CircuitPlayground.playTone(440, 1000);
+  for(int i=5;i<10;i++) {
+    CircuitPlayground.setPixelColor(i, 0x002366);
+    delay(100);
+  }
+  for(int i=9;i>4;i--) {
+    CircuitPlayground.setPixelColor(i, 0x000000);
+    delay(100);
+  }
+}
+
