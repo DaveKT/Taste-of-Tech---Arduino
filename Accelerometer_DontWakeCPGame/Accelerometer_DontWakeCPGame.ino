@@ -1,15 +1,21 @@
 /*  Author:   David Tassara
- *  Purpose:  Demonstrate the raw values from the circuit playground accelerometer.
+ *  Purpose:  Demonstrate the raw values from the circuit playground accelerometer with a fun game.
  *  Date:     10 Feb 2017
  *  Version:  1.0
- *  TODO set maxV as float, move setup to loop
+ *  
+ *  Instructions
+ *  
+ *  Press the left button to select one of five levels of play. Each press will increase the level
+ *  of difficulty and then reset back to easy. Once you've selected the level of play press the right
+ *  button to start. Slowly pickup the CP and try to move it a foot and set it back down without
+ *  "waking" it. If you hear the buzzer and see blue lights you woke the CP and have to start again.
+ *  To select a new level press the center reset button and start over.
  */
 
 #include <Adafruit_CircuitPlayground.h>
 
-float X, Y, Z;
+float X, Y, Z, maxV;
 int skillLevel;
-int maxV;
 
 void setup() {
   Serial.begin(9600);
@@ -49,7 +55,7 @@ void chooseSkillLevel() {
   while (!CircuitPlayground.rightButton()) {
     if (CircuitPlayground.leftButton()) {
       skillLevel = skillLevel + 1;
-      if (skillLevel > 3) skillLevel = 1;
+      if (skillLevel > 5) skillLevel = 1;
       
       CircuitPlayground.clearPixels();
       for (int p=0; p<skillLevel; p++) {
@@ -63,33 +69,46 @@ void chooseSkillLevel() {
 void setSkillLevel() {
   // Set game difficulty based on skill level
   switch (skillLevel) {
-    case 1:
+    case 1: //easy
       maxV = 3;
-      CircuitPlayground.setPixelColor(0, 0x98FF48);
-      CircuitPlayground.setPixelColor(1, 0x98FF48);
-      CircuitPlayground.setPixelColor(2, 0x98FF48);
+      CircuitPlayground.setPixelColor(0, 0x00FF00);
       break;
-    case 2:
+    case 2: //moderate
       maxV = 2;
-      CircuitPlayground.setPixelColor(0, 0x98FF48);
-      CircuitPlayground.setPixelColor(1, 0x98FF48);
+      CircuitPlayground.setPixelColor(0, 0x00FF00);
+      CircuitPlayground.setPixelColor(1, 0x00FF00);
       break;
-    case 3:
+    case 3: //difficult
       maxV = 1;
-      CircuitPlayground.setPixelColor(0, 0x98FF48);
+      CircuitPlayground.setPixelColor(0, 0x00FF00);
+      CircuitPlayground.setPixelColor(1, 0x00FF00);
+      CircuitPlayground.setPixelColor(2, 0x00FF00);
       break;
+    case 4: //insane
+      maxV = 0.5;
+      CircuitPlayground.setPixelColor(0, 0x00FF00);
+      CircuitPlayground.setPixelColor(1, 0x00FF00);
+      CircuitPlayground.setPixelColor(2, 0x00FF00);
+      CircuitPlayground.setPixelColor(3, 0x00FF00);
+      break;
+    case 5: //ludicrous
+      maxV = 0.35;
+      CircuitPlayground.setPixelColor(0, 0x00FF00);
+      CircuitPlayground.setPixelColor(1, 0x00FF00);
+      CircuitPlayground.setPixelColor(2, 0x00FF00);
+      CircuitPlayground.setPixelColor(3, 0x00FF00);
+      CircuitPlayground.setPixelColor(4, 0x00FF00);
   }
 }
 
 void wakeCP() {
-  CircuitPlayground.playTone(440, 1000);
   for(int i=5;i<10;i++) {
     CircuitPlayground.setPixelColor(i, 0x002366);
-    delay(100);
+    CircuitPlayground.playTone(440, 75);
   }
   for(int i=9;i>4;i--) {
     CircuitPlayground.setPixelColor(i, 0x000000);
-    delay(100);
+    CircuitPlayground.playTone(440, 75);
   }
 }
 
