@@ -4,10 +4,10 @@
 //Morse code playback variables
 //Adjust PITCH to your liking and DOT for speed faster/slower
 const int PITCH = 600; // Morse code audio is sent at 600-800 Hz. 680 is quite nice
-const int DOT = 75;   //time duration in millis, change this to adjust transmission speed
+const int DOT = 65;   //time duration in millis, change this to adjust transmission speed
 
 const int DASH = 3 * DOT; //Morse standard dash is 3x longer than dot
-const int GAP = DOT+25; //Morse inter-element gap within a character is same length as dot
+const int GAP = DOT + 25; //Morse inter-element gap within a character is same length as dot
 const int INTER_LETTER = 3 * DOT; //Morse short gap between letters is 3x dot length
 const int INTER_WORD = 7 * DOT; //Morse medium gap between words is 7x dot length
 //*******************************************************//
@@ -32,7 +32,7 @@ void loop() {
   uinput.toUpperCase();
 
   if (uinput != "") {
-    
+
     //explode string to char array for sending
     messageSize = uinput.length() + 1;
     char mychararray[messageSize];
@@ -40,14 +40,10 @@ void loop() {
 
     for (int i = 0; i < messageSize; i++) {
       Serial.print(mychararray[i]);
-      
       playMorseLetter(mychararray[i]);
-      
-      
     }
     Serial.println();
   }
-
 }
 
 void playMorseLetter(char letter) {
@@ -97,7 +93,7 @@ void playMorseLetter(char letter) {
     "---..", //8
     "----.", //9
   };
-  if (letter == '/') { // use "/" as space between words
+  if (letter == '/' | letter == ' ') { // use "/" as space between words
     delay(INTER_WORD);
     return;
   }
@@ -114,7 +110,6 @@ void playMorseLetter(char letter) {
 
   for (int i = 0; i < strlen(morseCode); i++) {
     int duration = morseCode[i] == '-' ? DASH : DOT;
-    for(int p = 0; i < 6; p++
     CircuitPlayground.setPixelColor(0, 0, 0, 255);
     CircuitPlayground.playTone(PITCH, duration);
     CircuitPlayground.clearPixels();
