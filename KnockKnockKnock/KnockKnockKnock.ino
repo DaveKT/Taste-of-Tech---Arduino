@@ -1,3 +1,12 @@
+/*
+ * Author:  David Tassara
+ * Date:    February 13, 2017
+ * Purpose: Demonstrate the microphone sensor on Arduino Playground
+ * Note:    With the CP connected to USB run the serial plotter in Arduino IDE
+ *          to help the student visualize the knocking. This is a great
+ *          jumping off point for thresholds.
+ */
+
 #include <Adafruit_CircuitPlayground.h>
 
 int mic;

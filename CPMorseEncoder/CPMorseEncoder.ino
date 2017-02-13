@@ -1,8 +1,17 @@
+/*
+ * Author:  David Tassara
+ * Credit:  Morse Table and core decoding based on work by Usman Muzaffar, http://stackoverflow.com/a/28058216
+ * Date:    February 13, 2017
+ * Version  1.0
+ * Note:    Run the sketch with the Circuit Playground connected to USB.
+ *          Start the serial monitor and use the text field to send text
+ *          to the CP to encode. The script will handle A-Z, a-z, 0-9,
+ *          '/', & space. Have students type in their name or other message
+ *          (e.g. "Hello World') to hear and see the message played back in morse.
+ */
+
 #include "Adafruit_CircuitPlayground.h"
 
-//*******************************************************//
-//Morse code playback variables
-//Adjust PITCH to your liking and DOT for speed faster/slower
 const int PITCH = 600; // Morse code audio is sent at 600-800 Hz. 680 is quite nice
 const int DOT = 65;   //time duration in millis, change this to adjust transmission speed
 
@@ -10,7 +19,6 @@ const int DASH = 3 * DOT; //Morse standard dash is 3x longer than dot
 const int GAP = DOT + 25; //Morse inter-element gap within a character is same length as dot
 const int INTER_LETTER = 3 * DOT; //Morse short gap between letters is 3x dot length
 const int INTER_WORD = 7 * DOT; //Morse medium gap between words is 7x dot length
-//*******************************************************//
 
 String uinput = "";
 int messageSize;
@@ -47,12 +55,6 @@ void loop() {
 }
 
 void playMorseLetter(char letter) {
-  // Morse table by Usman Muzaffar
-  // Adapted from: http://stackoverflow.com/a/28058216
-  // Define two tables of strings one for letters and one for numbers,
-  // that return the Morse encoding. By using two separate tables, we
-  // can just offset the ASCII value of either a number or letter as
-  // the index to look up the Morse encoding.
   static const char *ALPHA_TABLE[] = {
     ".-",   //A
     "-...", //B
