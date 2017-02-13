@@ -1,4 +1,4 @@
-## Taste_of_Tech_Arduino
+## Taste of Tech: Arduino / Circuit Playground Edition
 ToT Arduino is a four day course taught over the period of four weeks (one day per week). The primary goal of the course is to intoduce technical concepts to students who show an interest and who may not have had prior exposure. During the ToT class the participating students are also exposed to thee sessions with Hour of Code and thress sessions with digital movie making. This course is specifically taylored to the Circuit Playground from Adafruit but could be modified for other Arduino-like microcontrollers. 
 
 ###Course Materials for ToT Arduino
