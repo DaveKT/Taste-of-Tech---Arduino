@@ -1,7 +1,13 @@
  /*
-Author: David Tassara
-Board: Circuit Playground
-*/
+  * Author: David Tassara
+  * Board:  Circuit Playground
+  * Date:   February 14, 2017
+  * 
+  * Note:   This code will play a scale. What happens if you move
+  *         the "for" loop from setup() to loop()? Test your guess
+  *         by moving the code.
+  * 
+  */
 #include <Adafruit_CircuitPlayground.h>
 
 int duration = 500; //how long should each note play

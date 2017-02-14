@@ -1,16 +1,20 @@
 /*
-Purpose: Circuit Playground Sensor Lesson
-Author: David Tassara
-Date: 3 February 2017
+ * Purpose: Circuit Playground Sensor Lesson
+ * Author: David Tassara
+ * Date: 3 February 2017
+ * 
+ * Note:  This application will act as a theramin (a musical instrucment that plays
+ *        different notes based on where your hand is). Lines 24 and 27 may be commented 
+ *        out/in to switch between debugging mode and "play" mode.
+ *        
+ *        Advanced: What happens when you change the int value (currently set to 100)
+ *        to some other value? Make your guess after you've run the code in debug mode
+ *        with the Serial Plotter running then change the value to test your answer.
 */
 
 #include <Adafruit_CircuitPlayground.h>
-#include <Wire.h>
-#include <SPI.h>
 
-//Step 1. Update the pin to 11 and change your circuit
-int speakerPin = 5;
-uint16_t lightValue; 
+int lightValue;
 
 void setup()
 {
@@ -20,17 +24,13 @@ void setup()
 
 void loop()
 {
-  int lightValue = CircuitPlayground.lightSensor();
-  
-//Step 2: Load program and check the light reading using Serial Monitor (call Dave)
-//  Serial.println(lightValue);
-  
-//Step 3: Uncomment the code below and run. What happens?  
+  lightValue = CircuitPlayground.lightSensor();
+
+  Serial.print(500); Serial.print(","); Serial.print(lightValue); Serial.print(","); Serial.println(0); 
+   
   if (lightValue > 100) {
-    CircuitPlayground.playTone(lightValue, 50, false);
+    //CircuitPlayground.playTone(lightValue, 50, false);
   }
-  else {
-    //CircuitPlayground.playTone(lightValue, 100);
-  }
-  
+
+  delay(100);
 }

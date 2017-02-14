@@ -1,12 +1,16 @@
-///////////////////////////////////////////////////////////////////////////////
-// Circuit Playground How Tall Is It
-// 
-// Uses the accelerometer to turn the Circuit Playground into an inclinometer.
-// Can be used to determine the height of objects using a little right angle
-// math.
-//
-// Author: Carter Nelson
-// MIT License (https://opensource.org/licenses/MIT)
+/*
+ * Circuit Playground How Tall Is It 
+ * Uses the accelerometer to turn the Circuit Playground into an inclinometer.
+ * Can be used to determine the height of objects using a little right angle
+ * math.
+ * 
+ * Author: Carter Nelson
+ * MIT License (https://opensource.org/licenses/MIT)
+ * Taken from Adafruit's Learning Site on 14 Feb 2017
+ * Site: https://learn.adafruit.com/how-tall-is-it/software?view=all#overview
+ * Also see attachement, How_Tall_Is_It_Worksheet.pdf
+ */
+
  
 #include <Adafruit_CircuitPlayground.h>
 #include <Wire.h>

@@ -4,7 +4,6 @@
  *  Version:  1.0
  *  
  *  Instructions
- *  
  *  Press the left button to select one of five levels of play. Each press will increase the level
  *  of difficulty and then reset back to easy. Once you've selected the level of play press the right
  *  button to start. Slowly pickup the CP and try to move it a foot and set it back down without
