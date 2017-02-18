@@ -63,3 +63,27 @@ Prior to starting the class make sure that the computers all have the Arduino ID
 
 1.	Have the students load the *Don't Wake the Circuit Playground Game*, explain how the game works, and let each student play a round on level three. 
 2.	If there is more time let them try level four (insane) or level 5 (ludicrous).
+
+####Week Three
+
+**Goals**: Learn about coding in C. Introduce basic concepts of coding including variables, constants, operators & comparators, conditional statements, and loops. Practice using the serial plotter to debug a program. Learn to alter a program to change some basic behavior.
+
+**Programs**
+
+1.	[Light Lab](https://github.com/DaveKT/Taste_of_Tech_Arduino/tree/master/Light_Lab)
+2.	[Light Theramin](https://github.com/DaveKT/Taste_of_Tech_Arduino/tree/master/Light_Theramin)
+3.	[Light_Theramin_A](https://github.com/DaveKT/Taste_of_Tech_Arduino/tree/master/Light_Theramin_A)
+
+**Session Guide**
+
+1.	Start the session by opening the Light_Lab on the CircuitPlayground on the overhead and walking through the code start from the top and walk all the way through to the end explaining each line. Things to point out:
+	*	Comments
+	*	Library
+	*	setup and loop functions
+	*	Constants
+	*	Variables
+	*	Assignment Operator
+	*	Serial print and println
+2.	Ask each student load the Light Lab code on their own CP. Once successfully loaded have them run the serial plotter. They should take note of the MIN, MAX lines as well as the sensed value. If the sensor value is not midway between the min and max have them adjust the MAXV constant so that the sensed reading is midway between the min & max.
+3. Ask the students to load the Light_Theramin_A program. (Note, this version has bugs.) Do a walk through of the code with less detail than the prior walk through. Review conditional statements.
+4.	
