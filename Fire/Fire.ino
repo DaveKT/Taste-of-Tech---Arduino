@@ -16,7 +16,7 @@ void loop() {
   int g = r - 90;
   int b = 40;
 
-  for (int x = 0; x < 9; x++)
+  for (int x = 0; x < 10; x++)
   {
     int flicker = random(50, 150);
     int r1 = r - flicker;
