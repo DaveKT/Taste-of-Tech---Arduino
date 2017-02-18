@@ -5,6 +5,7 @@ ToT Arduino is a four day course taught over the period of four weeks (one day p
 
 *	[Circuit Playground](https://www.adafruit.com/products/3000)
 *	[Arduino IDE](https://www.arduino.cc/en/Main/Software)
+*	[Arduino Language Reference](https://www.arduino.cc/en/Reference/HomePage)
 *	[Circuit Playground Board Support Package for Arduino IDE](https://learn.adafruit.com/add-boards-arduino-v164/overview)
 *	[Circuit Playground Lesson Software & Plans](https://github.com/DaveKT/Taste_of_Tech_Arduino)
 *	USB cables to connect the Circuit Playground to the computers
@@ -18,7 +19,7 @@ ToT Arduino is a four day course taught over the period of four weeks (one day p
 **Programs**
 
 1.	Arduino Example - Circuit Playground Hello_Blink
-2.	[Arduino Morse Encoder](https://github.com/DaveKT/Taste_of_Tech_Arduino/tree/master/ArduinoMorseEncoder)
+2.	[CP Morse Encoder](https://github.com/DaveKT/Taste_of_Tech_Arduino/tree/master/CPMorseEncoder)
 3.	[Play A Scale](https://github.com/DaveKT/Taste_of_Tech_Arduino/tree/master/Play_A_Scale)
 
 **Setup**
@@ -85,5 +86,30 @@ Prior to starting the class make sure that the computers all have the Arduino ID
 	*	Assignment Operator
 	*	Serial print and println
 2.	Ask each student load the Light Lab code on their own CP. Once successfully loaded have them run the serial plotter. They should take note of the MIN, MAX lines as well as the sensed value. If the sensor value is not midway between the min and max have them adjust the MAXV constant so that the sensed reading is midway between the min & max.
-3. Ask the students to load the Light_Theramin_A program. (Note, this version has bugs.) Do a walk through of the code with less detail than the prior walk through. Review conditional statements.
-4.	
+3. Ask the students to load the Light_Theramin_A program. (Note, this version has bugs.) Do a walk through of the code with less detail than the prior walk through. Review conditional statements. DEMO the working program.
+4.	Ask the students to review the code. Show that they can check the code by compiling. Once the code compiles have them load the code and see if it works. (It won't.) Help the students troubleshoot.
+
+**Stretch**
+
+1.	Ask the students to modify the code so that the tone goes up when the light level goes down.
+2.	Ask the students to update the playTone function so that the notes play longer.
+
+####Week Four
+
+**Goals**: Practice all the skills learned this session to debug, install, and play the simple Simple Simon game.
+
+**Programs**
+
+1.	Simple Simon A
+2.	[Simple Simon](https://github.com/DaveKT/Taste_of_Tech_Arduino/tree/master/SimpleSimon)
+
+**Session Guide**
+
+1.	Demo the Simple Simon game. Point out the use of buttons as selectors and explain that the pads are being used as capacative touch sensors.
+2.	Load the Simple Simon A lab into the IDE and project it onto the white board. Conduct a brief code walkthrough to reinforce the coding comcepts learned in the prior week. DO NOT discuss the bugs but if the studetnts find a bug ask them to record it so they can fix it in the next task.
+3. Ask the students to load and debug Simple Simon A. Let the students know this program has a few more bugs than the program last week had.  
+
+**Stretch**
+
+1. 	Let the students pick any of the sketches they would like to play with from Gitgub. Encourage them to modify the code to behave differently.
+2. Write Blinky Code from Scratch
