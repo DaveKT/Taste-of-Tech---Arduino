@@ -4,6 +4,7 @@ ToT Arduino is a four day course taught over the period of four weeks (one day p
 ###Course Materials for ToT Arduino
 
 *	[Circuit Playground](https://www.adafruit.com/products/3000)
+*	[Circuit Playground Library Reference](https://caternuson.github.io/Adafruit_CircuitPlayground/)
 *	[Arduino IDE](https://www.arduino.cc/en/Main/Software)
 *	[Arduino Language Reference](https://www.arduino.cc/en/Reference/HomePage)
 *	[Circuit Playground Board Support Package for Arduino IDE](https://learn.adafruit.com/add-boards-arduino-v164/overview)
