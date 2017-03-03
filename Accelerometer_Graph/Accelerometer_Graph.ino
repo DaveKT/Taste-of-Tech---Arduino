@@ -18,7 +18,7 @@ void setup() {
 void loop() {
   X = CircuitPlayground.motionX();
   Y = CircuitPlayground.motionY();
-  Z = CircuitPlayground.motionZ()-10;
+  Z = CircuitPlayground.motionZ();
 
   Serial.print(X);
   Serial.print(",");
