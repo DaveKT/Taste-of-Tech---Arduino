@@ -112,10 +112,18 @@ void playMorseLetter(char letter) {
 
   for (int i = 0; i < strlen(morseCode); i++) {
     int duration = morseCode[i] == '-' ? DASH : DOT;
-    CircuitPlayground.setPixelColor(0, 0, 0, 255);
+    lightAllPixels(0, 0, 255);
     CircuitPlayground.playTone(PITCH, duration);
     CircuitPlayground.clearPixels();
     delay(GAP);
   }
   delay(INTER_LETTER);
+}
+
+void lightAllPixels(int r, int g, int b) {
+
+  for(int i = 0; i<10; i++) {
+    CircuitPlayground.setPixelColor(i, r, g, b);
+  }
+
 }
