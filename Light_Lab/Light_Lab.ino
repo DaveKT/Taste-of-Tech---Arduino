@@ -6,7 +6,7 @@
  *          the code walktrhough you should talk about each of these elements. 
  */
 
- const int MAXV = 100;  //this number should be adjusted so that the nominal light reading is plotted midway between the MIN and MAX.
+ const int MAXV = 160;  //this number should be adjusted so that the nominal light reading is plotted midway between the MIN and MAX.
  const int MINV = 0;
  int lightValue; //this is a variable; it's used to store the current reading of the light sensor.
 

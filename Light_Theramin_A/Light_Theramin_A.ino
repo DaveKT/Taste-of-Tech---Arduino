@@ -26,7 +26,7 @@ void setup()
 
 void loop()
 {
-  lightValues = CircuitPlayground.lightSensor(); //assign a light reading to lightValue
+  lightValue = CircuitPlayground.lightSensor(); //assign a light reading to lightValue
 
   Serial.print(500); Serial.print(","); Serial.print(lightValue); Serial.print(","); Serial.println(0); 
    
