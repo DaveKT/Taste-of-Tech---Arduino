@@ -1,7 +1,7 @@
 ## Taste of Tech: Arduino / Circuit Playground Edition
-ToT Arduino is a four day course taught over the period of four weeks (one day per week). The primary goal of the course is to introduce technical concepts to students who show an interest and who may not have had prior exposure. During the ToT class the participating students are also exposed to thee sessions with Hour of Code and three sessions with digital movie making. This course is specifically tailored to the Circuit Playground from Adafruit but could be modified for other Arduino-like microcontrollers. 
+ToT Arduino is a four day course taught over the period of four weeks (one day per week). The primary goal of the course is to introduce technical concepts to students who show an interest and who may not have had prior exposure. During the ToT class the participating students are also exposed to thee sessions with Hour of Code and three sessions with digital movie making. This course is specifically tailored to the Circuit Playground from Adafruit but could be modified for other Arduino-like microcontrollers.
 
-###Course Materials for ToT Arduino
+### Course Materials for ToT Arduino
 
 *	[Circuit Playground](https://www.adafruit.com/products/3000)
 *	[Circuit Playground Library Reference](https://caternuson.github.io/Adafruit_CircuitPlayground/)
@@ -12,7 +12,7 @@ ToT Arduino is a four day course taught over the period of four weeks (one day p
 *	USB cables to connect the Circuit Playground to the computers
 *	Computers (at least one for every two students is recommended)
 
-###Course Outline
+### Course Outline
 
 ####Week One
 **Goals**: Learn the different parts of the circuit playground microcontoller, load and use a program from the Arduino IDE, learn how to blink a light and make a sound.
@@ -25,7 +25,7 @@ ToT Arduino is a four day course taught over the period of four weeks (one day p
 
 **Setup**
 
-Prior to starting the class make sure that the computers all have the Arduino IDE installed and the support for the Adafruit Circuit Playgrounds installed. If this is the first time setting up I also recommend loading and running a sketch to make sure everything works. Troubleshooting connectivity issues is not fun during class time. 
+Prior to starting the class make sure that the computers all have the Arduino IDE installed and the support for the Adafruit Circuit Playgrounds installed. If this is the first time setting up I also recommend loading and running a sketch to make sure everything works. Troubleshooting connectivity issues is not fun during class time.
 
 **Session Guide**
 
@@ -43,7 +43,7 @@ Prior to starting the class make sure that the computers all have the Arduino ID
 2.	Modify the play a scale program to play extra notes in the loop section of the sketch.
 3. Have the students modify the code to their liking.
 
-####Week Two
+#### Week Two
 **Goals**: Learn about the other inputs and outputs available on the Circuit Playground. Apply the definition of inputs and outputs (interfaces) to discuss where electronic systems in our everyday life have inputs and outputs. Load more advanced scripts and use the serial plotter to investigate sensor readings.
 
 **Programs**
@@ -63,10 +63,10 @@ Prior to starting the class make sure that the computers all have the Arduino ID
 
 **Stretch**
 
-1.	Have the students load the *Don't Wake the Circuit Playground Game*, explain how the game works, and let each student play a round on level three. 
+1.	Have the students load the *Don't Wake the Circuit Playground Game*, explain how the game works, and let each student play a round on level three.
 2.	If there is more time let them try level four (insane) or level 5 (ludicrous).
 
-####Week Three
+#### Week Three
 
 **Goals**: Learn about coding in C. Introduce basic concepts of coding including variables, constants, operators & comparators, conditional statements, and loops. Practice using the serial plotter to debug a program. Learn to alter a program to change some basic behavior.
 
@@ -95,7 +95,7 @@ Prior to starting the class make sure that the computers all have the Arduino ID
 1.	Ask the students to modify the code so that the tone goes up when the light level goes down.
 2.	Ask the students to update the playTone function so that the notes play longer.
 
-####Week Four
+#### Week Four
 
 **Goals**: Practice all the skills learned this session to debug, install, and play the simple Simple Simon game.
 
