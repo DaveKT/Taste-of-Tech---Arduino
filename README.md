@@ -20,8 +20,8 @@ ToT Arduino is a four day course taught over the period of four weeks (one day p
 **Programs**
 
 1.	Arduino Example - Circuit Playground Hello_Blink
-2.	[CP Morse Encoder](https://github.com/DaveKT/Taste_of_Tech_Arduino/tree/master/CPMorseEncoder)
-3.	[Play A Scale](https://github.com/DaveKT/Taste_of_Tech_Arduino/tree/master/Play_A_Scale)
+2.	[CP Morse Encoder](docs/CPMorseEncoder)
+3.	[Play A Scale](docs/Play_A_Scale)
 
 **Setup**
 
@@ -48,10 +48,10 @@ Prior to starting the class make sure that the computers all have the Arduino ID
 
 **Programs**
 
-1.	[Sound Graph](https://github.com/DaveKT/Taste_of_Tech_Arduino/tree/master/SoundGraph)
-2.	[KnockKnockKock](https://github.com/DaveKT/Taste_of_Tech_Arduino/tree/master/KnockKnockKnock)
-3.	[Accelerometer Graph](https://github.com/DaveKT/Taste_of_Tech_Arduino/tree/master/Accelerometer_Graph)
-4.	[Don't Wake the Circuit Playground](https://github.com/DaveKT/Taste_of_Tech_Arduino/tree/master/Accelerometer_DontWakeCPGame)
+1.	[Sound Graph](docs/SoundGraph)
+2.	[KnockKnockKock](docs/KnockKnockKnock)
+3.	[Accelerometer Graph](docs/Accelerometer_Graph)
+4.	[Don't Wake the Circuit Playground](docs/Accelerometer_DontWakeCPGame)
 
 **Session Guide**
 
@@ -72,9 +72,9 @@ Prior to starting the class make sure that the computers all have the Arduino ID
 
 **Programs**
 
-1.	[Light Lab](https://github.com/DaveKT/Taste_of_Tech_Arduino/tree/master/Light_Lab)
-2.	[Light Theramin](https://github.com/DaveKT/Taste_of_Tech_Arduino/tree/master/Light_Theramin)
-3.	[Light_Theramin_A](https://github.com/DaveKT/Taste_of_Tech_Arduino/tree/master/Light_Theramin_A)
+1.	[Light Lab](docs/Light_Lab)
+2.	[Light Theramin](docs/Light_Theramin)
+3.	[Light_Theramin_A](docs/Light_Theramin_A)
 
 **Session Guide**
 
@@ -102,7 +102,7 @@ Prior to starting the class make sure that the computers all have the Arduino ID
 **Programs**
 
 1.	Simple Simon A
-2.	[Simple Simon](https://github.com/DaveKT/Taste_of_Tech_Arduino/tree/master/SimpleSimon)
+2.	[Simple Simon](docs/SimpleSimon)
 
 **Session Guide**
 
