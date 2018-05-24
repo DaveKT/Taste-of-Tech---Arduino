@@ -1,6 +1,7 @@
 /*
  * Author:  David Tassara
- * Credit:  Morse Table and core decoding based on work by Usman Muzaffar, http://stackoverflow.com/a/28058216
+ * Credit:  Morse Table and core decoding based on work by Usman Muzaffar
+ * http://stackoverflow.com/a/28058216
  * Date:    February 13, 2017
  * Version  1.0
  * Note:    Run the sketch with the Circuit Playground connected to USB.
@@ -46,7 +47,7 @@ void loop() {
     char mychararray[messageSize];
     uinput.toCharArray(mychararray, messageSize);
 
-    for (int i = 0; i < messageSize; i++) {
+    for (int i = 0; i < messageSize-1; i++) {
       Serial.print(mychararray[i]);
       playMorseLetter(mychararray[i]);
     }
@@ -55,7 +56,7 @@ void loop() {
 }
 
 void playMorseLetter(char letter) {
-  static const char *ALPHA_TABLE[] = {
+  static char *ALPHA_TABLE[] = {
     ".-",   //A
     "-...", //B
     "-.-.", //C
@@ -83,7 +84,7 @@ void playMorseLetter(char letter) {
     "-.--", //Y
     "--..", //Z
   };
-  static const char *NUM_TABLE[] = {
+  static char *NUM_TABLE[] = {
     "-----", //0
     ".----", //1
     "..---", //2

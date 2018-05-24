@@ -1,3 +1,5 @@
+// Example for calulating curved responses. Not for ToT.
+
 
 const float pi = 3.1415;
 const float FREQUENCY = 5.0;
@@ -30,4 +32,3 @@ void loop() {
 float myMap(float v, float x0, float x1, float y0, float y1) {
   return y0 + (v - x0) * ((y1 - y0) / (x1 - x0));
 }
-

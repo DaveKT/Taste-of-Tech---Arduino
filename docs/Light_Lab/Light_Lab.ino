@@ -2,8 +2,9 @@
  * Author:  David Tassara
  * Date:    February 18, 2017
  * Purpose: Demonstrate the light sensor on the Ciccuit Playground
- * Note:    This sketch demonstrates constants, variables, loops, and the assignment operator. During
- *          the code walktrhough you should talk about each of these elements. 
+ * Note:    This sketch demonstrates constants, variables, loops,
+ *          and the assignment operator. During
+ *          the code walktrhough you should talk about each of these elements.
  */
 
  const int MAXV = 160;  //this number should be adjusted so that the nominal light reading is plotted midway between the MIN and MAX.
