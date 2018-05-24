@@ -50,7 +50,7 @@ Prior to starting the class make sure that the computers all have the Arduino ID
 
 1.	[Sound Graph](docs/SoundGraph)
 2.	[KnockKnockKock](docs/KnockKnockKnock)
-3.	[Accelerometer Graph](docs/Accelerometer_Graph)
+3.	[Accelerometer Graph](docs/Accelerometer_Graph/AccelGraph.md)
 4.	[Don't Wake the Circuit Playground](docs/Accelerometer_DontWakeCPGame/DontWake.md)
 
 **Session Guide**
