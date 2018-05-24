@@ -51,7 +51,7 @@ Prior to starting the class make sure that the computers all have the Arduino ID
 1.	[Sound Graph](docs/SoundGraph)
 2.	[KnockKnockKock](docs/KnockKnockKnock)
 3.	[Accelerometer Graph](docs/Accelerometer_Graph)
-4.	[Don't Wake the Circuit Playground](docs/Accelerometer_DontWakeCPGame)
+4.	[Don't Wake the Circuit Playground](docs/Accelerometer_DontWakeCPGame/DontWake.md)
 
 **Session Guide**
 
@@ -106,11 +106,11 @@ Prior to starting the class make sure that the computers all have the Arduino ID
 
 **Session Guide**
 
-1.	Demo the Simple Simon game. Point out the use of buttons as selectors and explain that the pads are being used as capacative touch sensors.
-2.	Load the Simple Simon A lab into the IDE and project it onto the white board. Conduct a brief code walkthrough to reinforce the coding comcepts learned in the prior week. DO NOT discuss the bugs but if the studetnts find a bug ask them to record it so they can fix it in the next task.
+1.	Demo the Simple Simon game. Point out the use of buttons as selectors and explain that the pads are being used as capacitive touch sensors.
+2.	Load the Simple Simon A lab into the IDE and project it onto the white board. Conduct a brief code walkthrough to reinforce the coding concepts learned in the prior week. DO NOT discuss the bugs but if the students find a bug ask them to record it so they can fix it in the next task.
 3. Ask the students to load and debug Simple Simon A. Let the students know this program has a few more bugs than the program last week had.  
 
 **Stretch**
 
-1. 	Let the students pick any of the sketches they would like to play with from Gitgub. Encourage them to modify the code to behave differently.
+1. 	Let the students pick any of the sketches they would like to play with from Github. Encourage them to modify the code to behave differently.
 2. Write Blinky Code from Scratch

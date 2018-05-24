@@ -1,16 +1,14 @@
-/*  Author:   David Tassara
- *  Purpose:  Demonstrate the raw values from the circuit playground accelerometer with a fun game.
- *  Date:     10 Feb 2017
- *  Version:  1.0
- *
- *  Instructions
- *  Press the left button to select one of five levels of play. Each press will increase the level
- *  of difficulty and then reset back to easy. Once you've selected the level of play press the right
- *  button to start. Slowly pickup the CP and try to move it a foot and set it back down without
- *  "waking" it. If you hear the buzzer and see blue lights you woke the CP and have to start again.
- *  To select a new level press the center reset button and start over.
- */
+## Don't Wake the Circuit Playground Game
 
+This application applies many of the core concepts in programming including variables, conditional statements, and loops. Beginning programmers may require the instructor to walk through the code with them before they fully understand.
+
+### Behavior
+
+The program challenges the player to move the circuit playground some distance without setting off the "alarm". It takes a veeery steady hand. At the start of the game the player may choose a level between "easy" and "ludicrous" by pressing the "left" button. Play is started once the player presses the "right" button.
+
+### Code
+
+~~~~
 #include <Adafruit_CircuitPlayground.h>
 
 float X, Y, Z, maxV;
@@ -110,3 +108,10 @@ void wakeCP() {
     CircuitPlayground.playTone(440, 75);
   }
 }
+~~~~
+
+[Download the Don't Wake the CP Game](Accelerometer_DontWakeCPGame.ino)
+
+### Key Lesson
+
+Review fundamental programming concepts and have fun!
