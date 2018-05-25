@@ -6,7 +6,7 @@ The name says it all.
 
 This code introduces how to play sound on the circuit playground. It's also an opportunity to discuss the basic form of an Arduino Sketch.
 
-*Note, the code that plays the sound is in setup so that it will only run once. If the code is moved to loop() then the scale will play over and over. A room full of students will looping scales may lead to mayhem You've been warned. :)*
+*Note, the code that plays the sound is in setup so that it will only run once. If the code is moved to loop() then the scale will play over and over. A room full of students with looping scales may lead to mayhem You've been warned. :)*
 
 ### Code
 
