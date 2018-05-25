@@ -21,7 +21,7 @@ ToT Arduino is a four day course taught over the period of four weeks (one day p
 
 1.	Arduino Example - Circuit Playground Hello_Blink
 2.	[CP Morse Encoder](docs/CPMorseEncoder/MorseEncoder.md)
-3.	[Play A Scale](docs/Play_A_Scale)
+3.	[Play A Scale](docs/Play_A_Scale/PlayAScale.md)
 
 **Setup**
 
