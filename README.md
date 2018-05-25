@@ -15,12 +15,12 @@ ToT Arduino is a four day course taught over the period of four weeks (one day p
 ### Course Outline
 
 ####Week One
-**Goals**: Learn the different parts of the circuit playground microcontoller, load and use a program from the Arduino IDE, learn how to blink a light and make a sound.
+**Goals**: Learn the different parts of the circuit playground microcontroller, load and use a program from the Arduino IDE, learn how to blink a light and make a sound.
 
 **Programs**
 
 1.	Arduino Example - Circuit Playground Hello_Blink
-2.	[CP Morse Encoder](docs/CPMorseEncoder)
+2.	[CP Morse Encoder](docs/CPMorseEncoder/MorseEncoder.md)
 3.	[Play A Scale](docs/Play_A_Scale)
 
 **Setup**
