@@ -72,7 +72,7 @@ Prior to starting the class make sure that the computers all have the Arduino ID
 
 **Programs**
 
-1.	[Light Lab](docs/Light_Lab)
+1.	[Light Lab](docs/Light_Lab/LightLab.md)
 2.	[Light Theramin](docs/Light_Theramin)
 3.	[Light_Theramin_A](docs/Light_Theramin_A)
 
