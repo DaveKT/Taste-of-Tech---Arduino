@@ -14,7 +14,7 @@ ToT Arduino is a four day course taught over the period of four weeks (one day p
 
 ### Course Outline
 
-####Week One
+#### Week One
 **Goals**: Learn the different parts of the circuit playground microcontroller, load and use a program from the Arduino IDE, learn how to blink a light and make a sound.
 
 **Programs**
@@ -49,7 +49,7 @@ Prior to starting the class make sure that the computers all have the Arduino ID
 **Programs**
 
 1.	[Sound Graph](docs/SoundGraph/SoundGraph.md)
-2.	[KnockKnockKock](docs/KnockKnockKnock)
+2.	[Knock Knock Knock](docs/KnockKnockKnock/Knock.md)
 3.	[Accelerometer Graph](docs/Accelerometer_Graph/AccelGraph.md)
 4.	[Don't Wake the Circuit Playground](docs/Accelerometer_DontWakeCPGame/DontWake.md)
 
