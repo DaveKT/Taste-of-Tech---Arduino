@@ -101,8 +101,7 @@ Prior to starting the class make sure that the computers all have the Arduino ID
 
 **Programs**
 
-1.	Simple Simon A
-2.	[Simple Simon](docs/SimpleSimon)
+1.	[Simple Simon](docs/SimpleSimon/SimpleSimon.md)
 
 **Session Guide**
 
