@@ -122,7 +122,6 @@ Prior to starting the class make sure that the computers all have the Arduino ID
 This section includes links to additional programs that demonstrate various components of the circuit playground board. Full outlines are not available but the code is commented.
 
 * [Button Test](docs/ButtonTest/ButtonTest.ino), demonstrates the use of circuit playground buttons.
-* Accelerometer Graph
-* Slide Switch Test
+* [Slide Switch Test](docs/SlideSwitchTest/SlideSwitchTest.ino), demonstrates the use of the slide switch.
 * Fire
 * Curve
