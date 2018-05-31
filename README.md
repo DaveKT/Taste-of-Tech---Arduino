@@ -123,5 +123,5 @@ This section includes links to additional programs that demonstrate various comp
 
 * [Button Test](docs/ButtonTest/ButtonTest.ino), demonstrates the use of circuit playground buttons.
 * [Slide Switch Test](docs/SlideSwitchTest/SlideSwitchTest.ino), demonstrates the use of the slide switch.
-* Fire
+* [Fire](docs/Fire/Fire.ino), mimics a "flame". Can be used to create a nice display.
 * Curve
