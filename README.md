@@ -124,4 +124,4 @@ This section includes links to additional programs that demonstrate various comp
 * [Button Test](docs/ButtonTest/ButtonTest.ino), demonstrates the use of circuit playground buttons.
 * [Slide Switch Test](docs/SlideSwitchTest/SlideSwitchTest.ino), demonstrates the use of the slide switch.
 * [Fire](docs/Fire/Fire.ino), mimics a "flame". Can be used to create a nice display.
-* Curve
+* [Curve](docs/Curve/Curve.ino), demonstrates the use of math to create a "curved" response or output. Useful for things like dimming. This prints a row of asterisks based on a sine wave. (Advanced)
